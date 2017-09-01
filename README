@@ -1,0 +1,22 @@
+ixpando_demo README
+
+1.  Build procedure:
+      > git clone https://github.com/jwesterinen/ixpando_demo ixpando_demo
+      > cd ixpando_demo
+      > make
+      > ixpando_demo [<value>]
+
+2.  This program uses an API, described in ixpando.h, that abstracts access to 
+    the Ixpando board.  It was meant to be built and run on a Raspberry Pi;
+    no other platforms have been tested.  See main.c and ixpando.h for details
+    on how this all works.
+
+3.  This program relies on the wiringPi library available from wiringpi.com.
+    Their web site describes how to download, build, and install the library.
+ 
+4.  Hardware interface:
+      rpi pin 3 = SDA
+      rpi pin 4 = +5v
+      rpi pin 5 = SCL
+      rpi pin 6 = GND
+
