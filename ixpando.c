@@ -23,7 +23,7 @@ int Ixpando_Init(int i2cAddr)
 {
 
 	// get the fd
-	if ((fd = wiringPiI2CSetup(i2cAddr)) == -1)
+	if ((fd = wiringPiI2CSetup(i2cAddr)) != -1)
 	{
 		if (
 			// invert portA and add pullups 
